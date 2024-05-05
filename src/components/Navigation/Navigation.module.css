@@ -1,0 +1,19 @@
+
+.nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 24px;
+    padding: 20px;
+    background-color: #070707;
+}
+.navLink {
+    padding: 8px;
+    color: #fafafa;
+}
+.navLink:hover {
+    color: #969496;
+}
+.active {
+    color: #e01919;
+}

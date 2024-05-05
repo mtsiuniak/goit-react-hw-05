@@ -1,0 +1,131 @@
+
+.movieDetails {
+    position: relative;
+    padding: 0 16px;
+}
+
+.movieDetailsThumb {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.btnLink {
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #F6F6F6;
+    color: #1B1B1B;
+    transition: background-color .4s cubic-bezier(.4, 0, .2, 1), color .4s cubic-bezier(.4, 0, .2, 1), box-shadow .4s cubic-bezier(.4, 0, .2, 1);
+}
+
+.btnLink:hover,
+.btnLink:focus {
+    background-color: rgb(0, 70, 182);
+    color: #F6F6F6;
+    box-shadow: 0 2px 2px #00000024, 0 2px 4px #0000001f, 0 3px 6px #0003;
+}
+
+.movieDetailsSection {
+    margin-bottom: 30px;
+}
+
+.movieDetailsImg {
+    margin-bottom: 20px;
+}
+
+.movieDetailsTitle {
+    font-size: 30px;
+    text-align: center;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.movieDetailsTagline {
+    font-size: 20px;
+    line-height: 1.2;
+
+    margin-bottom: 5px;
+}
+
+.movieDetailsText {
+    font-size: 17px;
+    line-height: 1.2;
+
+    margin-bottom: 5px;
+}
+
+.movieDetailsScore {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.spanAccent {
+    font-weight: 700;
+}
+
+.iconSpilled {
+    display: block;
+    width: 35px;
+    height: 35px;
+    background-image: url('../../assets/img/spilled.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.iconUpright {
+    display: block;
+    width: 35px;
+    height: 35px;
+    background-image: url('../../assets/img/upright.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.movieDetailsTitleFilm {
+    font-size: 25px;
+    line-height: 1.2;
+
+    margin-bottom: 10px;
+}
+
+.movieDetailsGenresList {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.moreInfo {
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid #F6F6F6; */
+    gap: 10px;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.moreInfoLinkActive {
+    background-color: rgb(0, 70, 182);
+    color: #F6F6F6;
+    box-shadow: 0 2px 2px #00000024, 0 2px 4px #0000001f, 0 3px 2px #0003;
+}
+
+
+
+
+
+
