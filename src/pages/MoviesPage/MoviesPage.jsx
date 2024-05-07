@@ -8,11 +8,11 @@ import toast, { Toaster } from 'react-hot-toast';
 
 export default function MoviesPage ()  {
   const [searchResults, setSearchResults] = useState([]);
-  const [searchParams, setSearchParams] = useSearchParams();
-  const searchQuery = searchParams.get('search');
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
   const [loading, setLoading] = useState(false);
+  const [searchParams, setSearchParams] = useSearchParams();
+  const searchQuery = searchParams.get('search');
 
   useEffect(() => {
     setSearchResults([]);

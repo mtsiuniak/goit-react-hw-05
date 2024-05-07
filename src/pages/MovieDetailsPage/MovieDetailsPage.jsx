@@ -17,7 +17,8 @@ export default function MovieDetailsPage() {
   const [loading, setLoading] = useState(false);
 
   const location = useLocation();
-  const backLinkHref = useRef(location.state?.from ?? '/');
+  const backLinkURL = useRef(location.state ?? '/');
+  
 
   const buildLinkClass = ({ isActive }) => {
     return clsx(css.btnLink, isActive && css.moreInfoLinkActive);
@@ -42,7 +43,7 @@ export default function MovieDetailsPage() {
   const userScore = movie ? (Number(movie.vote_average) * 10).toFixed(0) : null;
   return (
     <section className={css.movieDetails}>
-      <Link to={backLinkHref.current} className={css.btnLink}>
+      <Link to={backLinkURL.current} className={css.btnLink}>
         Go back
       </Link>
       {loading && <p>Loading information...</p>}
